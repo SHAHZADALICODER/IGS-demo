@@ -24,5 +24,6 @@ onAuthStateChanged(auth, (user) => {
     } else {
         console.log("No user is signed in.");
         alert("Please sign in to upload a game.");
+        window.location.href = "auth.html";
     }
 });
