@@ -23,7 +23,8 @@ onAuthStateChanged(auth, (user) => {
         console.log("User is already in authenticated state:", userId);
     } else {
         console.log("No user is signed in.");
-        alert("Please sign in to upload a game.");
-        window.location.href = "auth.html";
+        alert("Please sign in to upload a game.").then(() => {
+            window.location.href = "auth.html";
+        });
     }
 });
